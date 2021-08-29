@@ -186,7 +186,6 @@ describe('Todos', () => {
     const listResponse = await request(app)
       .get('/todos')
       .set('username', userResponse.body.username);
-
     expect(listResponse.body).toEqual([]);
   });
 
